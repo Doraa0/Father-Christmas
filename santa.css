@@ -1,0 +1,219 @@
+
+.christmasdaddy {
+  --skin: #fca;
+  --eyes: #000;
+  --cheeks: #f001;
+  --beard: #fff;
+  --mustache: #fff;
+  --suit: #a00;
+  width: 40%;
+  height: 85%;
+  position: absolute;
+  top: 10%;
+  left: 30%;
+border-radius: 35px;
+background: #e6e6e6;
+box-shadow: inset 7px -7px 11px #c8c8c8,
+            inset -7px 7px 11px #ffffff;
+  
+}
+
+.head {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  border-radius: 50%;
+  height: 30%;
+  width: 25%;
+  transform: translate(-50%, 0);
+  background: var(--skin);
+  
+}
+
+
+.eyes {
+  position: absolute;
+  top: 23%;
+  left: 45%;
+  width: 2%;
+  height: 2%;
+  background: var(--eyes);
+  border-radius: 50%;
+  box-shadow: 6.66vmin 0 var(--eyes);
+}
+
+.cheeks {
+  position: absolute;
+  top: 25.5%;
+  left: 43%;
+  width: 5%;
+  height: 3%;
+  background: var(--cheeks);
+  border-radius: 50%;
+  box-shadow: 7.25vmin 0 var(--cheeks);
+}
+
+
+.beard {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  width: 30%;
+  height: 40%;
+  background: var(--beard);
+  transform: translate(-50%, 0);
+  border-radius: 100% / 120% 120% 80% 80%;
+}
+
+.mustache {
+  position: absolute;
+  top: 31%;
+  left: 51%;
+  width: 10%;
+  height: 30%;
+  background: var(--mustache);
+  border-radius: 100% 20% 100% 0;
+  transform-origin: top right;
+  transform: translate(-100%, 0) rotate(25deg);
+}
+
+.mustache + .mustache {
+  left: 49%;
+  border-radius: 20% 100% 0 100%;
+  transform-origin: top left;
+  transform: rotate(-25deg);
+}
+html, body {
+  background: #abc;
+}
+
+.hat {
+  position: absolute;
+  width: 23%;
+  height: 20%;
+  background: var(--suit);
+  border-radius: 100% 20% 0 0;
+  top: -2%;
+  left: 50%;
+  transform: translate(-50%, 0) rotate(1deg);
+}
+
+.hat::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -17%;
+  left: -5%;
+  width: 110%;
+  height: 40%;
+  border-radius: 100% / 50%;
+  box-shadow: inset 0 4vmin var(--mustache);
+  transform: rotate(-2deg);
+}
+
+.hat::after {
+  content: "";
+    transform: translate(-40%, -50%);
+  display: block;
+  position: absolute;
+  right: -5vmin;
+  top: -16%;
+  width: 8vmin;
+  height: 8vmin;
+  border-radius: 50%;
+  background: var(--beard);
+}
+
+.body {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  width: 50%;
+  height: 50%;
+  background: var(--suit);
+  border-radius: 100% / 150% 150% 25% 25%;
+  transform: translate(-50%, 0); 
+  /* background-image: ; */
+    
+}
+
+.buttons {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 2.5%;
+  height: 2.5%;
+  border-radius: 50%;
+  background: var(--belt);
+  color: var(--belt);
+  box-shadow: 0 5vmin, 0 10vmin, 0 0.1vmin, 0 22vmin, 0 33vmin;
+  opacity: 0.75;
+}
+
+
+
+.arms {
+  position: absolute;
+  top: 37%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 65%;
+  height: 40%;
+  background: #a00;
+  border-radius: 100% / 170% 170% 25% 25%;
+  background-image: linear-gradient(transparent 20%, #000);
+}
+
+.hands {
+  position: absolute;
+  top: 70%;
+  left: 18%;
+  width: 13%;
+  height: 13%;
+  background: var(--belt);
+  box-shadow: 41vmin 0 var(--belt);
+  border-radius: 50%;
+}
+
+.leg {
+  position: absolute;
+  top: 75%;
+  left: 29%;
+  width: 19%;
+  height: 25%;
+  background: var(--suit);
+  transform: skew(2deg);
+  background-image: linear-gradient(#0002, transparent 70%, var(--belt) 0);
+}
+
+.leg + .leg {
+  left: 52%;
+}
+
+.leg::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: -6%;
+  width: 110%;
+  height: 20%;
+  background: black;
+  border-radius: 10vmin 10vmin 0 0;
+}
+
+.leg + .leg::after {
+  left: -4%;
+}
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+                   
